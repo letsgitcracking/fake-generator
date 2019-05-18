@@ -8,10 +8,6 @@ const generate = async () => {
     document.getElementById('maidenName').innerHTML = data.motherMaiden;
     document.getElementById('email').innerHTML = data.email;
     document.getElementById('phone').innerHTML = data.phone;
-    let image = document.createElement('img');
-    image.setAttribute("src", data.avatar);
-    document.body.appendChild(image);
-
-
+    document.getElementById('avatar').src = data.avatar;
 
   }

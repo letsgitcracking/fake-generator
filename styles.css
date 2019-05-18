@@ -21,8 +21,11 @@
     padding: 5px;
 }
 
+.container {
+    padding: 10px;
+}
+
 .dataheader {
-    border: 1px dashed blue;
     display: flex;
     justify-content: space-evenly;
 }
@@ -30,11 +33,14 @@
 .content {
     width: 800px;
     margin: 0 auto 0 auto;
-    border: 1px solid black;
 }
 
 .text {
-    border: 1px solid red;
+    float: left;
+}
+
+.image {
+    float:right;
 }
 .footer {
     clear: both;
@@ -43,7 +49,3 @@
     color: #e0e1e2;
     padding: 15px;
 }
-
-table {
-    border: 1px solid blue;
-  }
