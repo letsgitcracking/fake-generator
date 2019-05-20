@@ -8,10 +8,10 @@ app.set('port', process.env.PORT || 9000);
 app.use(cors());
 
 app.get('/data', (req, res) => {
-  res.json(getCustomCard())
+  res.json(fakeData())
 });
 
-getCustomCard = () => {
+fakeData = () => {
   return {
     "name": faker.name.findName(),
     "address": {
