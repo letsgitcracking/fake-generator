@@ -1,4 +1,5 @@
-const app = require('express')(),
+const express = require('express'),
+      app = express(),
   cors = require('cors'),
   faker = require('faker');
 
@@ -6,6 +7,7 @@ app.set('port', process.env.PORT || 9000);
 
 //Ask - Do I need to use cors?
 app.use(cors());
+app.use(express.static("public"));
 
 app.get('/data', (req, res) => {
   res.json(fakeData())
