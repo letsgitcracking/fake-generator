@@ -15,6 +15,6 @@
     "faker": "^4.1.0"
   },
   "devDependencies": {
-    "snyk": "^1.541.0"
+    "snyk": "^1.996.0"
   }
 }
